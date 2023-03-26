@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS', 'Century-gothic', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -15,14 +16,12 @@
     justify-content: center;
     background: var(--bordowy);
     position: fixed;
-    width: 100%;
-
-
+    z-index: 999;
+    width: 100%
 }
 
 .navbar * {
     text-decoration: none;
-    font-family: 'Trebuchet MS', 'Century-gothic', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     font-size: 1.5rem;
     background-color: var(--bordowy);
@@ -46,17 +45,17 @@
     object-fit: cover;
 }
 
-.banner>.kolka {
+.kolka {
     display: flex;
     width: 100%;
     gap: 3rem;
-    position: absolute;
-    bottom: -3rem;
-    align-items: center;
+    position: relative;
+    bottom: 7rem;
+    align-items: baseline;
     justify-content: center;
 }
 
-.banner>.kolka .kolko {
+.kolka .kolko {
     width: 9rem;
     height: 9rem;
     background-color: var(--bordowy);
@@ -65,9 +64,54 @@
     outline-offset: -0.7rem;
 }
 
-.banner .logo_druzyny p{
+.logo_druzyny {
+    display: flex;
+    width: 13%;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo_druzyny p{
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 1px var(--bordowy) solid;
     color: var(--bordowy);
     padding: 0.5rem 0;
+    margin: 0;
 }
+
+.logo_druzyny hr{
+    border-top: 1px var(--bordowy) solid;
+    
+}
+
+.logo_druzyny:hover .kolko{
+    transform: scale(1.1);
+  }
+
+.o_szczepie, .dzialania{
+    position: relative;
+    top: -2rem;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: var(--bordowy) 2px solid;
+}
+
+h1 {
+    color: var(--bordowy);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+p{
+    margin: 1rem;
+}
+
+.dzialania h1 {
+    text-align: right;
+    margin-right: 4rem;
+}
+
+
